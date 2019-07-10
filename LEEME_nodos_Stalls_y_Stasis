@@ -1,0 +1,21 @@
+
+
+
+para probar los nodos de stalls y stasis:
+
+Generalmente abriamos tres consolas con sus respectivos "source devel/setup.bash" 
+
+Primero:
+roslaunch ca_gazebo create_empty_world.launch
+
+luego:
+roslaunch ca_twist_mux twist_mux.launch
+
+y por ultimo para mover el robot:
+roslaunch ca_tools keyboard_teleop_mux.launch
+
+
+
+Esto usamos para hacer los graficos
+rqt_multiplot --force-discover
+
