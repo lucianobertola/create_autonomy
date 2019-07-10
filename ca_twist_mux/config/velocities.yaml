@@ -8,9 +8,28 @@ topics:
   name    : joystick
   topic   : joy_vel
   timeout : 0.5
-  priority: 100
+  priority: 50
 -
   name    : keyboard
   topic   : key_vel
   timeout : 0.5
-  priority: 90
+  priority: 50
+-
+  name    : stalls
+  topic   : stalls_vel
+  timeout : 0.5
+  priority: 100
+-
+  name    : stasis
+  topic   : stasis_vel
+  timeout : 0.5
+  priority: 80
+
+
+locks:
+-
+  name    : stalls1
+  topic   : stop_vel
+  timeout : 0.0
+  priority: 100
+
