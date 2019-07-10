@@ -9,6 +9,14 @@
     <!-- A ground plane -->
     <include>
       <uri>model://ground_plane</uri>
+        <surface>
+          <friction>
+            <ode> 
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
     </include>
 
     <physics type="ode">
@@ -31,6 +39,22 @@
         </constraints>
       </ode>
     </physics>
+    
+    <include>
+      <uri>model://alfombra</uri>
+    </include>
+    <include>
+      <uri>model://alfombra2</uri>
+      <pose>-1.0 0 0.015 0 0 0</pose>      
+    </include>
+    <include>
+      <uri>model://alfombra3</uri>
+      <pose>-2.0 0 0.03 0 0 0</pose>      
+    </include>
+
+
+
+
   </world>
 
   <scene>

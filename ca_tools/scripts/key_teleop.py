@@ -13,6 +13,8 @@ import math
 import rospy
 from geometry_msgs.msg import Twist
 
+KEY_VEL_TOPIC = "/key_vel"
+
 class Velocity(object):
 
     def __init__(self, min_velocity, max_velocity, num_steps):
@@ -85,7 +87,7 @@ class KeyTeleop():
     def __init__(self, interface):
         self._interface = interface
         self._pub_cmd = rospy.Publisher('cmd_vel', Twist)
-
+        
         self._hz = rospy.get_param('~hz', 10)
 
         self._num_steps = rospy.get_param('~turbo/steps', 4)

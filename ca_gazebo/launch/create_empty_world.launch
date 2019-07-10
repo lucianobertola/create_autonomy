@@ -3,7 +3,7 @@
 
 	<arg name="x_pos" default="0.0"/>
 	<arg name="y_pos" default="0.0"/>
-	<arg name="z_pos" default="0.0"/>
+	<arg name="z_pos" default="0.04"/>
 
 	<arg name="paused" default="false"/>
 	<arg name="gui" default="true"/>
